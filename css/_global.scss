@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $siyahrenk;
+}
+
+.linkButton {
+    color: $mavirenk;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+.baslik2 {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.firstButton {
+    color: white;
+    background-color: $mavirenk;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $mavialternatif;
+    }
+}
+
+#blueOutline {
+    border: 1px solid $mavirenk;
+    color: $mavirenk;
+    padding: 0.5rem 1rem;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}

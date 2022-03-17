@@ -1,0 +1,632 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #110229;
+}
+
+.linkButton {
+  color: #1daeff;
+  font-size: 1.3rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.baslik2 {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.firstButton {
+  color: white;
+  background-color: #1daeff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.firstButton:hover {
+  background-color: #0092e7;
+}
+
+#blueOutline {
+  border: 1px solid #1daeff;
+  color: #1daeff;
+  padding: 0.5rem 1rem;
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #110229;
+}
+
+.myNav li {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 0 1rem;
+  -webkit-filter: drop-shadow(0px 4px 1.75px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 4px 1.75px rgba(0, 0, 0, 0.1));
+  display: inline-block;
+}
+
+.myNav li a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.myNav li a:hover {
+  color: #1daeff;
+}
+
+.myNav li #blueOutline:hover {
+  color: #110229;
+  border: 1px dashed #110229;
+}
+
+.littleMenu {
+  display: none;
+}
+
+#show {
+  display: block;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  -webkit-transition: 0.5s all ease-in;
+  transition: 0.5s all ease-in;
+}
+
+#show #myNavLittle {
+  display: block;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #110229;
+  -webkit-transition: 0.5s all linear;
+  transition: 0.5s all linear;
+}
+
+#show #myNavLittle li {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin: 3rem;
+  -webkit-filter: drop-shadow(0px 4px 1.75px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 4px 1.75px rgba(0, 0, 0, 0.1));
+  display: block;
+}
+
+#show #myNavLittle li a {
+  margin: 3rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#show #myNavLittle li a:hover {
+  color: #1daeff;
+}
+
+#show #myNavLittle li #blueOutline:hover {
+  color: #110229;
+  border: 1px dashed #110229;
+}
+
+#show.hide {
+  height: 40vh;
+  opacity: 1;
+}
+
+.myHeader {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.myHeader .yaziDivi {
+  position: absolute;
+  width: 40%;
+  top: 15%;
+  left: 5%;
+}
+
+.myHeader .yaziDivi h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 5vh;
+}
+
+.myHeader .yaziDivi span {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.myHeader img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.articlePhoto {
+  position: relative;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.articlePhoto:hover {
+  -webkit-transform: perspective(2em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
+          transform: perspective(2em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
+}
+
+.articlePhoto a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.articlePhoto a:hover {
+  color: #110229;
+  opacity: 0.8;
+}
+
+.articlePhoto img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+.articlePhoto .articleYazi {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+}
+
+.articlePhoto .articleYazi h3 {
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.houses {
+  border: 2px solid #8f90a6;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.houses:hover {
+  border: 2px solid #1daeff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.houses img {
+  border-radius: 20px;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.houses ul {
+  padding: 0.5rem 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.houses ul li {
+  opacity: 0.8;
+}
+
+.links i {
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fa-facebook:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.fa-twitter {
+  color: #08a0e9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fa-twitter:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.fa-instagram {
+  color: #dd2a7b;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fa-instagram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.fa-linkedin {
+  color: #0077b5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fa-linkedin:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-list li {
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer-list li:hover {
+  color: #0092e7;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #8f90a6;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 2rem;
+}
+
+footer form input {
+  margin: 0;
+  border: none;
+  width: 90%;
+  height: 100%;
+}
+
+footer form input:focus {
+  outline: none;
+}
+
+footer form button {
+  width: 10%;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+footer form button i {
+  color: #1daeff;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+footer form button i:hover {
+  color: #0092e7;
+}
+
+.tabs {
+  margin-top: 2rem;
+  position: absolute;
+  width: 720px;
+  height: 150px;
+}
+
+.tabs .tab-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+.tabs .tab-header div {
+  height: 100%;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+  position: relative;
+  width: calc(60% / 3);
+  line-height: 50px;
+}
+
+.tabs .tab-header .active {
+  background-color: white;
+  opacity: 1;
+}
+
+.tabs .tab-content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  height: calc(100% - 50px);
+  overflow: hidden;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+}
+
+.tabs .tab-content .veri {
+  position: absolute;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0;
+  top: 200%;
+}
+
+.tabs .tab-content .active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  top: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs .tab-content .active form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs .tab-content .active form div {
+  margin: 1rem;
+  border: 1px solid #8f90a6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.tabs .tab-content .active form div:hover {
+  border: 1px solid #0092e7;
+}
+
+.tabs .tab-content .active form div input {
+  border: none;
+  background: transparent;
+  width: 150px;
+  font-size: 0.85rem;
+}
+
+.tabs .tab-content .active form div input:focus {
+  outline: none;
+}
+
+.tabs .tab-content .active form div i {
+  color: #8f90a6;
+}
+
+.tabs .tab-content .active form button {
+  border: none;
+  background: transparent;
+  cursor: context-menu;
+}
+
+.tabs .tab-content .active form button .fa-search {
+  cursor: pointer;
+  color: white;
+  background: #0092e7;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.tabs .tab-content .active form button .fa-search:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .tabs {
+    width: 600px !important;
+    height: 130px !important;
+  }
+  .tabs .tab-header {
+    height: 30px !important;
+  }
+  .tabs .tab-header div {
+    height: 100%;
+    line-height: 30px !important;
+  }
+  .tabs .tab-content .active form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabs .tab-content .active form div input {
+    padding: 0 !important;
+    width: 120px !important;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 0.6rem;
+  }
+  .tabs {
+    width: 500px !important;
+    height: 120px !important;
+  }
+  .tabs .tab-header {
+    height: 30px !important;
+  }
+  .tabs .tab-header div {
+    height: 100%;
+    line-height: 30px !important;
+  }
+  .tabs .tab-content .active form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabs .tab-content .active form div input {
+    padding: 0 !important;
+    width: 100px !important;
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 0.5rem;
+  }
+  .myNav {
+    display: none !important;
+  }
+  .littleMenu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    padding: 1rem;
+  }
+  .yaziDivi h1 {
+    font-size: 2rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 2vh !important;
+  }
+  .yaziDivi span {
+    font-size: 1.3rem !important;
+  }
+  .tabs {
+    width: 370px !important;
+    height: 100px !important;
+  }
+  .tabs .tab-header {
+    height: 30px !important;
+  }
+  .tabs .tab-header div {
+    height: 100%;
+    line-height: 30px !important;
+  }
+  .tabs .tab-content .active form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabs .tab-content .active form div {
+    padding: 5px !important;
+  }
+  .tabs .tab-content .active form div input {
+    padding: 0 !important;
+    width: 70px !important;
+    font-size: 0.5rem;
+  }
+  .articleYazi {
+    position: absolute;
+    top: 5%;
+    left: 43% !important;
+  }
+  .articleYazi h3 {
+    font-size: 3rem !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .yaziDivi h1 {
+    font-size: 1.5rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 1vh !important;
+  }
+  .yaziDivi span {
+    display: none;
+  }
+  .tabs {
+    margin-top: 1rem !important;
+    width: 300px !important;
+    height: 90px !important;
+  }
+  .tabs .tab-header {
+    height: 20px !important;
+  }
+  .tabs .tab-header div {
+    height: 100%;
+    line-height: 20px !important;
+  }
+  .tabs .tab-content {
+    font-size: 0.8rem !important;
+  }
+  .tabs .tab-content .active form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabs .tab-content .active form div {
+    padding: 5px !important;
+    margin: 0.5rem !important;
+  }
+  .tabs .tab-content .active form div input {
+    padding: 0 !important;
+    width: 60px !important;
+  }
+  .houseDivs {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

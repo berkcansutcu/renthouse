@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- local css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Rent House</title>
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container mt-3 navContainer">
+
+
+      <div class="col-4">
+        <a href="#">
+          <img src="img/logo.svg" alt="">
+        </a>
+      </div>
+
+      <div class="col-8 onRight">
+        
+        <ul class="myNav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">properties</a></li>
+          <li><a href="#">agents</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#" id="blueOutline">Log In</a></li>
+        </ul>
+
+
+        <i class="fas fa-bars littleMenu fa-3x" onclick="menu()"></i>
+      </div>
+
+      <div class="col-12" id="show" >
+        <ul class="myNavLittle text-center" id="myNavLittle">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">properties</a></li>
+          <li><a href="#">agents</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#" id="blueOutline">Log In</a></li>
+        </ul>
+      </div>
+      
+
+
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="my-5">
+    <div class="myHeader">
+      <img src="img/headerphoto.jpg" alt="">
+      <div class="yaziDivi">
+        <h1>Easy way to find a perfect property</h1>
+        <span>We provide a complete service for the sale, purchase or rental of real estate</span>
+
+
+        <div class="tabs mt-5">
+          <div class="tab-header">
+            <div class="active">Rent</div>
+            <div>Buy</div>
+            <div>Sell</div>
+          </div>
+
+          <div class="tab-content">
+
+
+
+
+
+            <section class="veri active">
+
+            <form >
+
+
+
+              <div>
+                <label for="text" class="baslik2">Location</label><br>
+                <input type="text" placeholder="Select your city">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+
+              <div>
+                <label for="text" class="baslik2">Property Type</label><br>
+                
+                <input type="text" placeholder="Choose property type">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+
+
+              <div>
+                <label for="text" class="baslik2">Price Range</label><br>
+                
+                <input type="text" placeholder="Choose price range">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+
+              <button><i class="fas fa-search"></i></button>
+            </form>
+
+
+          </section>
+
+
+
+
+
+          <section class="veri">
+            <form >
+
+
+
+              <div>
+                <label for="text" class="baslik2">Your Location</label><br>
+                <input type="text" placeholder="Select your city">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+
+              <div>
+                <label for="text" class="baslik2">Home Type</label><br>
+                
+                <input type="text" placeholder="Choose property type">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+
+
+              <div>
+                <label for="text" class="baslik2">Price</label><br>
+                
+                <input type="text" placeholder="Choose price range">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+
+              <button><i class="fas fa-search"></i></button>
+            </form>
+
+
+          </section>
+
+
+
+
+
+
+
+          <section class="veri">
+            <form >
+
+
+
+              <div>
+                <label for="text" class="baslik2">Location</label><br>
+                <input type="text" placeholder="Select your city">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+
+              <div>
+                <label for="text" class="baslik2">Third Item</label><br>
+                
+                <input type="text" placeholder="Choose property type">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+
+
+              <div>
+                <label for="text" class="baslik2">Third</label><br>
+                
+                <input type="text" placeholder="Choose price range">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+
+              <button><i class="fas fa-search"></i></button>
+            </form>
+
+
+          </section>
+
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </header>
+
+  <!-- 4lü kısım -->
+  <article class="container mb-5">
+
+    <div class="row">
+      <div class="col text-center my-4">
+        <h2 class="baslik2" style="width: 30%;">We are avaible in many well-known countries</h2>
+      </div>
+    </div>
+
+
+    <div class="row my-3 ">
+
+
+      <section class="col-md-3 articlePhoto my-2">
+        <a href="#"><img src="img/1.jpg" alt="" class="w-100" style="border-radius: 30px;">
+          <div class="articleYazi">
+            <h3>America</h3>
+          </div>
+        </a>
+      </section>
+
+      <section class="col-md-3 articlePhoto my-2">
+        <a href="#"><img src="img/2.jpg" alt="" class="w-100" style="border-radius: 30px;">
+          <div class="articleYazi">
+            <h3>Spain</h3>
+          </div>
+        </a>
+      </section>
+
+      <section class="col-md-3 articlePhoto my-2">
+        <a href="#"><img src="img/3.jpg" alt="" class="w-100" style="border-radius: 30px;">
+          <div class="articleYazi">
+            <h3>London</h3>
+          </div>
+        </a>
+      </section>
+
+      <section class="col-md-3 articlePhoto my-2">
+        <a href="#"><img src="img/4.jpg" alt="" class="w-100" style="border-radius: 30px;">
+          <div class="articleYazi">
+            <h3>Paris</h3>
+          </div>
+        </a>
+      </section>
+
+
+
+
+    </div>
+  </article>
+
+  <!-- Recently Added -->
+  <article class="container pt-5 my-5">
+
+    <div class="row">
+      <div class="col-6">
+        <h3 class="baslik2">Recently Added</h3>
+      </div>
+
+
+      <div class="col-6">
+        <a href="#" class="float-end linkButton">See all</a>
+      </div>
+
+    </div>
+    <!-- 1.Part -->
+    <div class="row">
+      <!-- 1. Ev -->
+      <div class="col-sm-6 houseDivs">
+        <div class="houses">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="img/house1.jpg" alt="" class="w-100 ">
+            </div>
+
+            <div class="col-sm-8">
+              <h2 class="baslik2">103/143 West Street, Crows Nest</h2>
+              <ul>
+                <li>1 Bedroom</li>
+                <li>15 M</li>
+                <li>Without Garage</li>
+              </ul>
+              <div class="row">
+                <div class="col-sm-6 ">
+                  <h5 style="opacity: 0.8;">Berkcan Sütçü</h5>
+                </div>
+                <div class="col-sm-6 ">
+                  <button class="btn btn-secondary px-1 py-0 float-end">$45,999</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Ev -->
+      <div class="col-sm-6 houseDivs">
+        <div class="houses">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="img/house2.jpg" alt="" class="w-100 ">
+            </div>
+
+            <div class="col-sm-8">
+              <h2 class="baslik2">103/143 West Street, Crows Nest</h2>
+              <ul>
+                <li>10 Bedroom</li>
+                <li>150 M</li>
+                <li>2 Garage</li>
+              </ul>
+              <div class="row">
+                <div class="col-sm-6 ">
+                  <h5 style="opacity: 0.8;">Berkcan Sütçü</h5>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-secondary px-1 py-0 float-end">$145,999</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- 2.Part -->
+    <div class="row my-4">
+      <!-- 1. Ev -->
+      <div class="col-sm-6 houseDivs">
+        <div class="houses">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="img/house3.jpg" alt="" class="w-100 ">
+            </div>
+
+            <div class="col-sm-8">
+              <h2 class="baslik2">103/143 West Street, Crows Nest</h2>
+              <ul>
+                <li>10 Bedroom</li>
+                <li>150 M</li>
+                <li>2 Garage</li>
+              </ul>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h5 style="opacity: 0.8;">Berkcan Sütçü</h5>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-secondary px-1 py-0 float-end">$45,999</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Ev -->
+      <div class="col-sm-6 houseDivs">
+        <div class="houses">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="img/house4.jpg" alt="" class="w-100 ">
+            </div>
+
+            <div class="col-sm-8">
+              <h2 class="baslik2">103/143 West Street, Crows Nest</h2>
+              <ul>
+                <li>10 Bedroom</li>
+                <li>150 M</li>
+                <li>2 Garage</li>
+              </ul>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h5 style="opacity: 0.8;">Berkcan Sütçü</h5>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-secondary px-1 py-0 float-end">$45,999</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- 3.Part -->
+    <div class="row my-4">
+      <!-- 1. Ev -->
+      <div class="col-sm-6 houseDivs">
+        <div class="houses">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="img/house5.jpg" alt="" class="w-100 ">
+            </div>
+
+            <div class="col-sm-8">
+              <h2 class="baslik2">103/143 West Street, Crows Nest</h2>
+              <ul>
+                <li>10 Bedroom</li>
+                <li>150 M</li>
+                <li>2 Garage</li>
+              </ul>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h5 style="opacity: 0.8;">Berkcan Sütçü</h5>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-secondary px-1 py-0 float-end">$45,999</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Ev -->
+      <div class="col-sm-6 houseDivs">
+        <div class="houses">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="img/house6.jpg" alt="" class="w-100 ">
+            </div>
+
+            <div class="col-sm-8">
+              <h2 class="baslik2">103/143 West Street, Crows Nest</h2>
+              <ul>
+                <li>10 Bedroom</li>
+                <li>150 M</li>
+                <li>2 Garage</li>
+              </ul>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h5 style="opacity: 0.8;">Berkcan Sütçü</h5>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-secondary px-1 py-0 float-end">$45,999</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 2. Header Kısmı -->
+  <article class="my-5">
+    <section class="myHeader">
+      <img src="img/secondaryheader.jpg" alt="">
+      <div class="yaziDivi">
+        <h1>Easy way to find a perfect property</h1>
+        <span>We provide a complete service for the sale, purchase or rental of real estate</span><br>
+        <button class="mt-5 firstButton">Contact Us</button>
+      </div>
+    </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="my-4 text-center">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-5 pe-3 my-3">
+          <img src="img/logo.svg" alt="" class="mb-4"><br>
+          <span class="my-4" style="opacity:0.5;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nam
+            ex modi doloribus quisquam porro, fuga provident dolorum. Magnam, eveniet non? Dicta corrupti quibusdam
+            reprehenderit.</span>
+          <div class="links my-4">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
+          </div>
+          <p style="opacity:0.5; "><a href="#" style="font-style: italic;">Berkcan Sütçü.</a> Tüm Hakları Saklıdır.</p>
+        </div>
+
+        <div class="col-sm-2 ps-5 my-3 ">
+          <h4 class="baslik2">Take a tour</h4>
+          <ul class="footer-list">
+            <li>Feature</li>
+            <li>Partners</li>
+            <li>Pricing</li>
+            <li>Product</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2 ps-5 my-3 ">
+          <h4 class="baslik2">Our Company</h4>
+          <ul class="footer-list">
+            <li>About Us</li>
+            <li>Agents</li>
+            <li>Blog</li>
+            <li>Media</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 ps-5 my-3 ">
+          <h4 class="baslik2 mb-3">Subscribe</h4><br>
+          <span class="my-4" style="opacity:0.5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+          <form>
+            <input type="text" placeholder="Email Adress">
+            <button><i class="fas fa-arrow-circle-right "></i></button>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
